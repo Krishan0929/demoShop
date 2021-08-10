@@ -9,11 +9,16 @@ import org.springframework.http.HttpStatus;
 import java.time.ZonedDateTime;
 
 @Data
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
-public class ExceptiopnInfo
+public class ExceptionInfo
 {
     private String message;
     private HttpStatus httpStatus;
     private ZonedDateTime zonedDateTime;
+
+    public ExceptionInfo(String message, HttpStatus notFound, ZonedDateTime now)
+    {
+
+    }
 }
